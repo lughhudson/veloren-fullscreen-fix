@@ -1,0 +1,20 @@
+As of 2022/06/19 selecting the fullscreen option on the macOS version of Veloren causes a bug, where, on next relaunch, won't let you type your password into the input box. My attempt with this instructional file is to share the process of changing "fullscreen" to "false".
+
+user_name@computer_name ~ % cd Library/"Application Support"/airshipper/profiles/default/userdata/voxygen/
+user_name@computer_name % ls
+user_name@computer_name % cat settings.ron
+user_name@computer_name % [text_editor] settings.ron 
+
+### Note: Do not use the "[ ]", instead input your preferred text editor ###
+
+### Do command+F and search for "fullscreen". This is the section of code you're looking for: ###
+
+fullscreen: (
+            enabled: true,
+            mode: Exclusive,
+            resolution: (1920, 1080),
+            bit_depth: None,
+            refresh_rate: None,
+        ),
+
+Change "enabled" to "false". Save the file and launch Veloren. You should be able to sign in.

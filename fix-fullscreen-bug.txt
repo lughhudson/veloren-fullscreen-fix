@@ -1,4 +1,4 @@
-As of 2022/06/19 selecting the fullscreen option on the macOS version of Veloren causes a bug, where, on next relaunch, won't let you type your password in the input box. Below is a step by step to fix the bug.
+As of 2022/06/19 selecting the fullscreen option on the macOS version of Veloren causes a bug, where, on next relaunch, won't let you type your password in the input box. Below is a step by step to fix the bug. (Note: I have a MacBook Air (M1, 2020))
 
 user_name@computer_name ~ % cd Library/"Application Support"/airshipper/profiles/default/userdata/voxygen/
 user_name@computer_name % ls
